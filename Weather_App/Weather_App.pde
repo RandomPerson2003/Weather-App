@@ -26,6 +26,7 @@ void mousePressed() {
 
 void keyPressed() {}
 
-println("Start Of Console");
+ println("Start of Console");
 //textSetup();
+
 //textdraw(title, titleFont, height, #2C08FF, CENTER, CENTER, width*1/4, height*0, titlweWidth, titleHeight);
