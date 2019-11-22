@@ -29,6 +29,6 @@ void keyPressed() {
 textSetup();
 textDraw(title, titleFont, height, #2C08FF, CENTER, CENTER, titleX, titleY, titleRectWidth, titleRectHeight);// title
 textDraw(quit, titleFont, height, #2C08FF, CENTER, CENTER, quitX, quitY, quitRectWidth, quitRectHeight);// quit button
-//String format (Date apiCurrentDate) = Date.toString(apiCurrentDateCall);
+//String strDate = Date.format(apiCurrentDateCall);
 //textDraw(apiCurrentDateCall, titleFont, height, #2C08FF, CENTER, CENTER, quitX, quitY, quitRectWidth, quitRectHeight);// time stamp
 }
