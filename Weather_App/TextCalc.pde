@@ -1,7 +1,6 @@
 //Global Variable
 PFont titleFont;
 //String[] fontList = PFont.list();
-
 String title, quit;
 Float currentTempEdm, currentTempCalg, currentTempTor;
 float  titleWidth, titleHeight;
@@ -27,10 +26,26 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   float fontSize = height;
   fill(ink);
   textAlign (alignHorizontal, alignVertical);
+  if (string.length() >= 3) {
+    fontSize = textCalculator(height, string, rectWidth);
+  }
+  else {
+    fontSize = fontSize * 0.08;
+  }
+  
+
+
   textFont(font, fontSize);
   text(string, X, Y, rectWidth, rectHeight);
   fill(255);
 }
 
-void textCalc() {
+
+float textCalculator(float size, String string, float rectWidth) {
+  textSize(size);
+  while ( textWidth(string) > rectWidth ) {
+    size = size*0.99;
+    textSize(size);
+  }
+  return size;
 }

@@ -22,11 +22,13 @@ void mousePressed() {
   unwrapToVariables();
   // City Call, see procedure, using Boolean & Button
   // Choice of three cities: Edmonton, Calgary, Toronto
+  println("Start of Console");
 }
 
-void keyPressed() {}
-
- println("Start of Console");
-//textSetup();
-
-//textdraw(title, titleFont, height, #2C08FF, CENTER, CENTER, width*1/4, height*0, titlweWidth, titleHeight);
+void keyPressed() {
+textSetup();
+textDraw(title, titleFont, height, #2C08FF, CENTER, CENTER, titleX, titleY, titleRectWidth, titleRectHeight);// title
+textDraw(quit, titleFont, height, #2C08FF, CENTER, CENTER, quitX, quitY, quitRectWidth, quitRectHeight);// quit button
+//String format (Date apiCurrentDate) = Date.toString(apiCurrentDateCall);
+//textDraw(apiCurrentDateCall, titleFont, height, #2C08FF, CENTER, CENTER, quitX, quitY, quitRectWidth, quitRectHeight);// time stamp
+}
