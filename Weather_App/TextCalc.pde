@@ -12,7 +12,6 @@ void textSetup() {
   titleWidth = width*1/2;
   titleHeight = height*1/10;
   quit = "X";
-  //apiCurrentDateCall, variable to print to canvas
   currentTempEdm = tempEdmonton;
   currentTempCalg = tempCalgary;
   currentTempTor = tempToronto;
@@ -28,15 +27,12 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   textAlign (alignHorizontal, alignVertical);
   if (string.length() >= 3) {
     fontSize = textCalculator(height, string, rectWidth);
-  }
+  } 
   else {
     fontSize = fontSize * 0.08;
   }
-  
-
-
   textFont(font, fontSize);
-  text(string, X, Y, rectWidth, rectHeight);
+  text(string, rectX, rectY, rectWidth, rectHeight);
   fill(255);
 }
 

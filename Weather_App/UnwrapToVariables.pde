@@ -1,29 +1,7 @@
-
- JSONArray weather = jsonCurrentEdmonton.getJSONArray("weather");
- 
- JSONObject all = weather.getJSONObject(0);
- String mainWeather = all.getString("main");
- String description = all.getString("description");
- String icon = all.getString("icon");
- 
- JSONObject main = jsonCurrentEdmonton.getJSONObject("main");
- float temp = main.getFloat("temp");
- float tempMin = main.getFloat("temp_min");
- float tempMax = main.getFloat("temp_max");
- 
- int apiCallTime = jsonCurrentEdmonton.getInt("dt");
- 
- JSONObject sys = jsonCurrentEdmonton.getJSONObject("sys");
- String country = sys.getString("country");
- int sunrise = sys.getInt("sunrise");
- int sunset = sys.getInt("sunset");
- 
- String name = jsonCurrentEdmonton.getString("name");
-
-
-
-
+import java.text.ParseException;  
+import java.text.SimpleDateFormat;  
 import java.util.Date;
+import java.util.Locale; 
 
 String mainWeatherEdmonton, descriptionEdmonton, iconEdmonton, countryEdmonton, nameEdmonton;
 float tempEdmonton, tempMinEdmonton, tempMaxEdmonton;
