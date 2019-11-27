@@ -26,7 +26,7 @@ void buildingURL() {
    baseUrl_Forecast = "https://api.openweathermap.org/data/2.5/forecast?";
    edmontonId = "id=5946768";
    calgaryId = "id=5913490";
-   torontoId = "id=6087824";
+   torontoId = "id=6167865";
    apiKey = "APPID=7b1c7a6397106de6c9dcfec407a4f011";
    mode= "mode=json";
    unitMetric ="units=metric";

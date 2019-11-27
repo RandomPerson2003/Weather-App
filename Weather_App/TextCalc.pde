@@ -5,9 +5,10 @@ String title, quit;
 Float currentTempEdm, currentTempCalg, currentTempTor;
 float  titleWidth, titleHeight;
 String nameEdm, nameCalg, nameTor;
+color ink = #CAB8B6;
 
 void textSetup() {
-  titleFont = createFont ("Harrington", height);
+  titleFont = createFont ("Ariel", height);
   title = "Weather Thing";
   titleWidth = width*1/2;
   titleHeight = height*1/10;
