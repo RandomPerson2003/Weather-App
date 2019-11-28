@@ -5,10 +5,9 @@ String title, quit;
 Float currentTempEdm, currentTempCalg, currentTempTor;
 float  titleWidth, titleHeight;
 String nameEdm, nameCalg, nameTor;
-color ink = #CAB8B6;
 
 void textSetup() {
-  titleFont = createFont ("Ariel", height);
+  titleFont = createFont ("Helvetica", height);
   title = "Weather Thing";
   titleWidth = width*1/2;
   titleHeight = height*1/10;
@@ -22,7 +21,7 @@ void textSetup() {
 
 }
 
-void textDraw(String string, PFont font, float height, color ink, int alignHorizontal, int alignVertical, float rectX, float rectY, float rectWidth, float rectHeight) {
+void textDraw(String string, PFont font, float height,color ink, int alignHorizontal, int alignVertical, float rectX, float rectY, float rectWidth, float rectHeight) {
   float fontSize = height;
   fill(ink);
   textAlign (alignHorizontal, alignVertical);
