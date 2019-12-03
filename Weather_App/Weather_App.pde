@@ -1,5 +1,6 @@
 import processing.data.JSONObject;
 
+
 //Global Variables
 String edmTemp, calgTemp, torTemp;
 color blue = #2C43F5;
